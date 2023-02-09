@@ -1,40 +1,42 @@
 {
-  "name": "@landing/019-next",
-  "version": "0.0.1",
-  "private": true,
+  "name": "next-smooth-doc",
+  "author": "lwz7512@gmail.com",
+  "version": "1.0.0",
+  "description": "A minimal doc generator based on Next.js & mdx.",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next",
+    "dev:watch": "next-remote-watch ./docs",
     "build": "next build",
-    "serve": "next start",
     "export": "next export",
-    "postbuild": "next-sitemap"
+    "start": "serve out"
   },
   "dependencies": {
-    "framer-motion": "^3.1.1",
-    "next": "10.0.4",
-    "next-compose-plugins": "^2.2.1",
-    "next-optimized-images": "^2.6.2",
-    "polished": "^4.0.5",
-    "prettier": "^2.2.1",
-    "rc-drawer": "^4.1.0",
-    "react": "17.0.1",
-    "react-custom-scrollbars": "^4.2.1",
-    "react-dom": "17.0.1",
-    "react-ga": "^3.3.0",
-    "react-icons": "^4.1.0",
-    "react-modal-video": "1.2.6",
-    "react-scroll": "^1.8.1",
-    "react-slick": "^0.27.13",
-    "react-stickynode": "^3.0.4",
-    "react-waypoint": "^9.0.3",
-    "theme-ui": "^0.3.5",
-    "typeface-bree-serif": "^1.1.13",
-    "typeface-dm-sans": "^1.1.13"
+    "@docsearch/css": "^1.0.0-alpha.28",
+    "@docsearch/react": "^1.0.0-alpha.28",
+    "@xstyled/styled-components": "^3.0.0",
+    "gray-matter": "^4.0.2",
+    "next": "latest",
+    "next-mdx-remote": "^3.0.1",
+    "next-remote-watch": "1.0.0",
+    "polished": "^4.1.2",
+    "prism-react-renderer": "^1.2.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.2.0",
+    "react-is": "^17.0.2",
+    "react-live": "^2.2.3",
+    "reakit": "^1.3.8",
+    "remark": "13.0.0",
+    "remark-html": "13.0.1",
+    "styled-components": "^5.3.0"
   },
   "devDependencies": {
-    "imagemin-mozjpeg": "^9.0.0",
-    "imagemin-optipng": "^8.0.0",
-    "imagemin-svgo": "^8.0.0",
-    "next-sitemap": "^1.3.29"
-  }
+    "babel-plugin-styled-components": "^1.12.0",
+    "github-slugger": "^1.3.0",
+    "mdast-util-to-string": "^2.0.0",
+    "serve": "^11.3.2",
+    "unist-util-visit": "^2.0.3"
+  },
+  "license": "MIT"
 }
