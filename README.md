@@ -1,6 +1,6 @@
 # NEXTJS SMOOTH DOC
 
-@2021/06/04
+
 
 
 > A minimal doc generator based on Next.js & mdx.
